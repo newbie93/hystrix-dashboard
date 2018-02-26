@@ -46,7 +46,7 @@
 				<% if(typeof isCircuitBreakerOpen === 'object' ) { %>
 					Circuit <font color="red">Open <%= isCircuitBreakerOpen.true %></font> <font color="green">Closed <%= isCircuitBreakerOpen.false %></font>
 				<% } else { %>
-					Circuit <font color="orange"><%= isCircuitBreakerOpen.toString().replace("true", "Open").replace("false", "Closed") %></font>
+					Circuit <font color="orange"><%= isCircuitBreakerOpen.toString() %></font>
 				<% } %>
 			<% }  %>
 		<% } %>
